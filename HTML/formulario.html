@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+    <link rel="icon"type="image/png" href="colombia70.jpg">
+</head>
+<body>
+    <form action="">
+
+        <label for="nombre completo">Nombre Completo</label>
+        <input type="text" id="NombreC" placeholder="Nombre Completo" name="NombreC">
+        <br>
+        <label for="clave">Password</label>
+        <input type="password" id="password" placeholder="Password" name="password" >
+        <br>
+        <input type="submit" value="Aceptar">
+        <input type="reset" value="Cancelar">
+        <br>
+        <label for="comentarios">comentarios</label><br>
+        <textarea name="comentarios" id="comentarios" cols="60" rows="10"></textarea>
+        <label >Masculion</label>
+        <input type="radio" id="Masculion">
+        <br>
+        <label for="femenino">femenino</label>
+        <input type="radio" id="femenino">
+
+        seleccione los lenguajes que domina <br>
+        <input type="checkbox">java <br>
+        <input type="checkbox">C++ <br>
+        <input type="checkbox">Python <br>
+
+        seleccione una ciudad: <br>
+        <select name="ciudad" id="ciudad">
+
+            <option value="1">cartagena</option>
+            <option value="2">bogota</option>
+            <option value="3">cali</option>
+            <option value="4">neiva</option>
+            <option value="5">medellin</option>
+
+        </select> <br>
+        <fieldset>
+            <legend>ciudades</legend>
+            seleccione una o varias ciudades presione ctrl para seleccionar varios: <br>
+            <select name="ciudad[]" id="ciudad" size="2" multiple>
+            
+                <option value="1">cartagena</option>
+                <option value="2">bogota</option>
+                <option value="3">cali</option>
+                <option value="4">neiva</option>
+                <option value="5">medellin</option>
+
+            </select> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Fruver</legend>
+            selecciona una fruta o verdura <br>
+            <select name="frutas_verduras" id="">
+
+                <optgroup label ="frutas">
+                 
+                    <option value="1">manzana</option>
+                    <option value="2">pera</option>
+                    <option value="3">naranja</option>
+                
+                </optgroup>
+
+                <optgroup label ="verduras">
+                
+                    <option value="4">cebolla</option>
+                    <option value="5">lechuga</option>
+                    <option value="6">repollo</option>
+                
+                </optgroup>
+
+             </select>
+        </fieldset>
+
+        
+        
+
+    </form>
+</body>
+</html>
